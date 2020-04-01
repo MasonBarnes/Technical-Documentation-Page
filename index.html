@@ -1,8 +1,367 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
     <head>
-        <title>Technical Documentation Page</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial;
+                padding: 10px;
+                background: #f1f1f1;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            /* Header/Blog Title */
+            .header {
+                padding: 30px;
+                text-align: center;
+                background: white;
+            }
+            .h2 {
+                padding: 30px;
+                text-align: center;
+                background: white;
+            }
+            .header h1 {
+                font-size: 50px;
+            }
+            /* Style the top navigation bar */
+            .nav-bar {
+                overflow: hidden;
+                background-color: aqua;
+            }
+            /* Style the nav-bar links */
+            .nav-bar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* Change color on hover */
+            .nav-bar a:hover {
+                background-color: rgb(221, 221, 221);
+                color: black;
+            }
+            /* Left column */
+            .leftcolumn {   
+                float: right;
+                width: 75%;
+            }
+            /* Fake image */
+            .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+            /* Add a card effect for articles */
+            .card {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {   
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .nav-bar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            /* unvisited link */
+            a:link {
+                color: blue;
+            }
+            /* visited link */
+            a:visited {
+                color: purple;
+            }
+            /* mouse over link */
+            a:hover {
+            color: purple;
+            }
+            /* selected link */
+            a:active {
+                color: red;
+            }
+            /* navigation link colors */
+            #navbar a:link {
+                color: red;
+                background: aqua;
+            }
+            #navbar a:visited {
+                color: aqua;
+                background: pink;
+            }
+            #navbar a:hover {
+                color: white;
+                background: teal;
+            }
+            #footer a:link {
+                color: yellow;
+                background: black;
+            }
+            #navbar a:visited {
+                color: red;
+                background: aqua;
+            }
+            #navbar a:hover {
+                color: red;
+            background: silver;}
+            .sidenav {
+                height: 100%;
+                width: 200px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: aqua;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+            .sidenav a {
+                padding: 6px 6px 6px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .main {
+                margin-left: 200px; /* Same as the width of the sidenav */
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 15px;
+                }
+            .sidenav a {
+                font-size: 18px;
+                }
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="header">
+            <h1>Dovpo Topside Dual Mod<br>User Manual</h1>
+            <p>A TVCreation, Designed by The Vapor Chronicles</p>
+            <img id="img" class="center" src="https://www.dhresource.com/0x0/f2/albu/g8/M00/88/41/rBVaVFy0HnCATdG0AAZ9_fIvXHM796.jpg" width="400" height="400" alt"Dopovo Topside Dual Mod Colors">
+        </div>
+        <nav class="nav-bar sidenav" id="navbar">
+            <header>Links</header>
+            <a class="nav-link" href="#Product_Information">Product Information</a>
+            <a class="nav-link" href="#Specifications">Specifications</a>
+            <a class="nav-link" href="#Menu">Menu</a>
+            <a class="nav-link" href="#Safety_Features_&_Warnings">Safety Features & Warnings</a>
+            <a class="nav-link" href="#Firmware_Update">Firmware Update</a>
+        </nav>
+        <div class="row">
+            <div class="leftcolumn">
+                <main id="main-doc">
+                    <div class="card">
+                        <section class="main-section" id="Product_Information">
+                            <header><b>Product Information</b></header>
+                            <code></code>
+                            <p>The TOPSIDE DUAL is the newest version of the innovative TOPSIDE Squonk
+                                mod that is created by Brian from The Vapor Chronicles YouTube channel.
+                                This game changing squonk mod has all the innovation from the original
+                                single battery TOPSIDE but now offers more power and extended battery
+                                life. This hard hitting device offers 200W of regulated power and uses
+                                dual 18650 batteries. The TOPSIDE DUAL offers a large 10ml squonk
+                                bottle eliquid capacity (backward compatible with original topside
+                                bottle and sled), simple top filling and an easy to use interface which
+                                makes this the perfect addition to those who want more power and
+                                extended battery life. Powerful and Simple squonking has arrived with
+                                the TOPSIDE DUAL.</p><br>
+                        </section><br>
+                    </div>
+                    <div class="card">
+                        <section class="main-section" id="Specifications">
+                            <header><b>Specifications</b></header>
+                            <code></code>
+                            <ul>
+                                <li>Material: Zinc Alloy</li>
+                                <li>Size: 54.0 x 42.0 x 88.5mm</li>                                    
+                                <li>Power Range: 5.0W-200.0W</li>
+                                <li>Temperature Range: 100-315℃/ 200-600℉</li>
+                                <li>Display: 0.96" OLED</li>
+                                <li>Input Voltage: 6.4V - 8.4V</li>
+                                <li>Output Voltage: 0.8v - 12.0v</li>
+                                <li>Resistance: 0.08ohm- 3.50ohm</li>
+                                <li>Battery: 2 x 18650 High-drain Battery</li>
+                                <li>Charging: MicroUSB 5V/2A</li>
+                                <li>Gold-plated spring loaded 510 pin</li>
+                                <li>Silicone bottles with a capacity of 10ml</li>                                
+                            </ul>
+                            <h5>Warning!</h5>
+                            <ul>
+                                <li>-Ensure you use only high-drain batteries for optimum performance and
+                                    safety.</li><br>
+                                <li>-Keep Ohm's Law into consideration when determining the optimum
+                                    settings. DO NOT EXCEED your batteries' capabilities of
+                                    maximum/continuous discharge rates.</li><br>
+                                <li>-Amperage limit for the Topside Dual is 40A.</li><br>
+                            </ul>
+                            <h5>Start Vaping</h5>
+                            <p>1. Install 2 x 18650 High-drain batteries. Make sure the positive and
+                               negative ends are facing the correct directions.</p>
+                            <p>2. Power On/Off: Click Fire Button 5 times quickly to turn the device on,
+                               repeat the process to turn the device off.</p>
+                            <p>3. Install the bottle carrier into the device.</p>
+                            <p>4. Attach an tomizer to the device, set your desired
+                               wattage/voltage/temperature and start vaping by pressing the Fire
+                               Button.</p>
+                            <p>5. Hold both Fire Button and “-” button to enter menu. To scroll menu
+                               options, press “-” or “+” button, press Fire Button to enter sub-menu
+                               or confirm settings.</p>
+                            <p>6. Hold both “+” and “-” buttons to lock the “+” and “-” buttons, repeat
+                               the process to unlock.</p>
+                            <p>7. While “+” and “-” buttons are locked, press “+” button 3 times
+                               quickly to enter “Stealth Mode”. While in Stealth Mode, when
+                               pressing Fire Button, the screen will stay off. To get out of Stealth
+                               Mode, you can click “+” button 3 times quickly, or  unlock adjust
+                               buttons by holding “+” & “-” buttons.</p>
+                            <p>8. To lock the Fire Button, click Fire Button 3 times. Repeat the process
+                               to unlock Fire Button.</p><br>
+                        </section><br>
+                    </div>
+                    <div class="card">
+                        <section class="main-section" id="Menu">
+                            <header><b>Menu</b></header>
+                            <code></code>
+                            <ol>
+                                <li>Hold Fire Button and “-” Button to enter Menu.</li><br>
+                                <li>POWER Or Wattage Mode:<br>
+                                    <p>Press “+” or “-” to adjust wattage in 0.5W
+                                    increment when it's under 100W or in 1W when it's over
+                                    100W. Hold “+” or “-” to cause the wattage to
+                                    scroll more quickly. When the device is standing by, all
+                                    values displayed on the screen are calculated values.
+                                    When firing the device, the values will be real-time
+                                    values.</p>
+                                    <p>Note: Resistance will always be the real-time value.</p></li>
+                                <li>Variable Voltage:<br>
+                                    <p>Press “+” or “-” to adjust voltage in 0.1v increment from
+                                    1.0v to 12.0v. Hold “+” or “-” button to cause the voltage
+                                    to scroll more quickly.</p></li>
+                                <li>Temperature Control Mode (Ni, Ti, Ss316):<br>
+                                    <p>When in Temperature Control Mode, press or hold “+” or
+                                    “-” button to adjust temperature. When temperature
+                                    value reaches the highest/lowest point in Celsius or
+                                    Fahrenheit, press “+” or “-” again to switch from °F to °C
+                                    or °C to °F.</p>
+                                    <p>To adjust pre-heat power in Temperature Control Mode,
+                                    hold both Fire Button and “+” button for 1 second,
+                                    wattage value will start flashing, you can adjust the wattage by
+                                    pressing/holding “+” or “-” button.</p>
+                                    <p>Press fire button to confirm settings or stay inactive for 3 seconds to save settings.</p></li>
+                                <li>TCR Mode:<br>
+                                    <p>You can adjust TCR value from 0.00010 ( 010 on display )
+                                    to 0.00999 ( 999 on display ) for a more accurate
+                                    temperature control vaping experience.</p></li>
+                                <li>STATS:<br>
+                                    <p>STATS or statistics. Enter the “STATS” menu, it shows you
+                                    how many puffs and how much time you vaped the device
+                                    since last reset. There are two options in the submenu,
+                                    to reset or exit to previous menu.</p></li>
+                                <li>The screen will go dim after 15 seconds of inactivity. The device will
+                                    enter Sleep Mode after 180 seconds of inactivity. Press any button to
+                                    wake up the device.</li><br>
+                                <li>Charging Batteries:<br>
+                                    <p>Plug MicroUSB cable to charge the device, batteries icons will indicate
+                                    they are getting filled up.</p></li><br>
+                            </ol>
+                        </section><br>
+                    </div>
+                    <div class="card">
+                        <section class="main-section" id="Safety_Features_&_Warnings">
+                            <header><b>Safety Features & Warnings</b></header>
+                            <code></code>
+                            <ol>
+                                <li>Battery reversal protection</li><br>
+                                <li>Short-circuit Protection: if there is a short circuit, when you press
+                                    the Fire Button, the screen will display "SHORTED".</li><br>
+                                <li>If the resistance of the atomizer is lower than 0.08Ω, when you press
+                                    the Fire Button, the screen will display "LOW Ω".</li><br>
+                                <li>Open-circuit Warning: if there is no atomizer attached or atomizer has
+                                    an open circuit, when you press the Fire Button, the screen will display
+                                    “CHECK ATOMIZER”.</li><br>
+                                <li>Overtime Protection: the device will cut power after 10 seconds of
+                                    continuous firing, screen will display "OVER 10S".</li><br>
+                                <li>Over-temperature Protection: if the board temperature goes over
+                                    75℃/167℉, the device will cut power, when you press Fire Button,
+                                    the screen will display "TOO HOT".</li><br>
+                                <li>Low-voltage Protection: if battery level is lower than 6.4v or either
+                                    one of the batteries has a lower than 2.9v voltage, when you press
+                                    the Fire Button, the screen will display "LOW BATTERY".</li>
+                            </ol>
+                            <h5>Warning!</h5>
+                            <ol>
+                                <li>Please use all accessories as intended to avoid damage to your device.</li><br>
+                                <li>When not using your device for a long period of time, please take out
+                                    the batteries from the device.</li><br>
+                                <li>Should damage occur, please do not attempt to repair by yourself.
+                                    Use any available warranty, in the first instance contact the reseller
+                                    you purchased the unit from.</li><br>
+                                <li>Please keep this product and accessories away from children and pets.</li><br>
+                                <li>To clean the device, use only a slightly damp towel, and do not allow
+                                    moisture to get inside of the device.</li><br>
+                                <li>If you need to insert the bottle pack into the device, please keep the device
+                                    at a 90° angle, otherwise eliquid may get into the interface or battery compartment.</li><br>
+                            </ol>
+                        </section><br>
+                    </div>
+                    <div class="card">
+                        <section class="main-section" id="Firmware_Update">
+                            <header><b>Firmware Update</b></header>
+                            <code></code>
+                            <ul>
+                                <li>Check your firmware version by holding “+” and “-” buttons for 2s when
+                                   the device is off.</li><br>
+                                <li>Go to the following link to check if there's an update available for your
+                                   Topside firmware.</li><br>
+                                <li>Follow the instruction on this webpage to update your topside firmware
+                                   to the latest version</li><br>
+                                   <a href="https://www.dovpoecig.com/topside-dual-squonker">Firmware Update</a><br>
+                            </ul>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="footer">
+            <header>A website design project by Mason Barnes</header>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
